@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PlayActivity"
+    android:background="@drawable/player_backgroound">
+
+    <TextView
+        android:id="@+id/tvSongName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_margin="@dimen/dimen20dp"
+        android:gravity="center"
+        android:text="Sample Song Name"
+        android:textSize="@dimen/font20sp" />
+
+    <ImageView
+        android:id="@+id/ivLogo"
+        android:layout_width="@dimen/dimen200dp"
+        android:layout_height="@dimen/dimen200dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/baseline_music_note_24"
+        android:background="#19FFFFFF"/>
+
+    <LinearLayout
+        android:id="@+id/llButtonHolder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen20dp">
+
+            <TextView
+                android:id="@+id/tvTimePlayed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00:20"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="@dimen/dimen20dp"/>
+
+            <SeekBar
+                android:id="@+id/sbMusic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="@dimen/dimen60dp"
+                android:layout_marginEnd="@dimen/dimen60dp" />
+
+            <TextView
+                android:id="@+id/tvTotalTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00:20"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="@dimen/dimen20dp"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="@dimen/dimen20dp">
+
+            <ImageButton
+                android:id="@+id/ibFastRewind"
+                android:layout_width="@dimen/dimen50dp"
+                android:layout_height="@dimen/dimen50dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/baseline_fast_rewind_24"
+                android:background="#00FFFFFF"
+                android:layout_marginEnd="@dimen/dimen10dp"
+                android:clickable="true"/>
+
+            <ImageButton
+                android:id="@+id/ibSkipPrevious"
+                android:layout_width="@dimen/dimen50dp"
+                android:layout_height="@dimen/dimen50dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/baseline_skip_previous_24"
+                android:background="#00FFFFFF"
+                android:layout_marginEnd="@dimen/dimen10dp"/>
+
+            <ImageButton
+                android:id="@+id/ibPlayPause"
+                android:layout_width="@dimen/dimen80dp"
+                android:layout_height="@dimen/dimen80dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/baseline_play_arrow_24"
+                android:background="#00FFFFFF"
+                android:layout_marginEnd="@dimen/dimen10dp"/>
+
+            <ImageButton
+                android:id="@+id/ibSkipNext"
+                android:layout_width="@dimen/dimen50dp"
+                android:layout_height="@dimen/dimen50dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/baseline_skip_next_24"
+                android:background="#00FFFFFF"
+                android:layout_marginEnd="@dimen/dimen10dp"/>
+
+            <ImageButton
+                android:id="@+id/ibFastForward"
+                android:layout_width="@dimen/dimen50dp"
+                android:layout_height="@dimen/dimen50dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/baseline_fast_forward_24"
+                android:background="#00FFFFFF"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
