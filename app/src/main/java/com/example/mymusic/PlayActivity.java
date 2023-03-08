@@ -196,6 +196,8 @@ public class PlayActivity extends AppCompatActivity {
 
         PlayPauseState = 0;
         ibPlayPause.setImageResource(R.drawable.baseline_pause_24);
+
+        configureSeekBar();
     }
 
     private String createTime(int duration){
